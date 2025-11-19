@@ -199,16 +199,33 @@ img {
   background-color: plum;
   padding: 20px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .grid-item h2 {
   margin-bottom: 15px;
 }
 
+/* If you still want iframe later */
 .grid-item iframe {
   width: 100%;
   height: 250px;
   border: none;
+}
+
+/* Image settings */
+.grid-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;  /* little gap before audio */
+  border-radius: 8px;
+}
+
+/* Audio spacing */
+.grid-item audio {
+  width: 100%;
+  margin-top: 10px;
 }
 
 /* ----- CAFE HUNTING PAGE: 4 SLIDESHOW CORNER LAYOUT ----- */
@@ -292,3 +309,4 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
