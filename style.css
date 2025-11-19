@@ -223,23 +223,23 @@ img {
 
 /* Corner positions */
 .top-left {
-    top: 40px;
-    left: 40px;
+    top: 60px;
+    left: 60px;
 }
 
 .top-right {
-    top: 400px;
-    right: 40px;
+    top: 60px;
+    right: 60px;
 }
 
 .bottom-left {
-    bottom: 40px;
-    left: 40px;
+    bottom: 60px;
+    left: 60px;
 }
 
 .bottom-right {
-    bottom: 40px;
-    right: 40px;
+    bottom: 60px;
+    right: 60px;
 }
 
 /* ----- CAFE HUNTING PAGE: 4 SLIDESHOW CORNER LAYOUT ----- */
@@ -323,6 +323,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
