@@ -240,7 +240,7 @@ img {
 .bottom-right {
     bottom: 60px;
     right: 60px;
-    padding: 100px;
+    padding: 60px;
 }
 
 /* ----- CAFE HUNTING PAGE: 4 SLIDESHOW CORNER LAYOUT ----- */
@@ -324,6 +324,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
