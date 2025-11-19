@@ -189,41 +189,39 @@ img {
 
 /* ----- MUSIC PAGE (NO COLUMNS) ----- */
 
-/* Each music item: title → image → audio */
-.music-item {
-    position: absolute;      /* allows corner placement */
-    width: 300px;
+/* Small picture + audio box */
+.corner-box {
+    position: absolute;
+    width: 200px;            /* make it smaller */
     background-color: plum;
-    padding: 15px;
-    border-radius: 12px;
+    padding: 10px;
+    border-radius: 10px;
     text-align: center;
-
     display: flex;
     flex-direction: column;
-    gap: 10px;                /* small gap between title, image, audio */
+    gap: 8px;                /* small gap between image & audio */
 }
 
 /* Title */
-.music-item h2 {
+.corner-box h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 14px;
 }
 
-/* Same-size Pictures */
-.music-item img {
+/* Picture smaller */
+.corner-box img {
     width: 100%;
-    height: 180px;
+    height: 140px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-/* Audio player */
-.music-item audio {
+/* Audio same width */
+.corner-box audio {
     width: 100%;
-    margin-top: 5px;
 }
 
-/* ---- Positioning for 4 corners ---- */
+/* Corner positions */
 .top-left {
     top: 20px;
     left: 20px;
@@ -325,6 +323,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
