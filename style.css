@@ -190,7 +190,7 @@ img {
 /* ----- MUSIC PAGE: 4 GRID LAYOUT ----- */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
   gap: 10px;
   padding: 20px;
 }
@@ -206,19 +206,11 @@ img {
   margin-bottom: 15px;
 }
 
-/* If you still want iframe later */
-.grid-item iframe {
-  width: 100%;
-  height: 250px;
-  border: none;
-}
-
-/* Image settings */
 .grid-item img {
   width: 100%;
-  height: 250px;
+  height: 180px;     /* smaller picture */
   object-fit: cover;
-  margin-bottom: 15px;  /* little gap before audio */
+  margin-bottom: 12px;
   border-radius: 8px;
 }
 
@@ -309,4 +301,5 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
