@@ -189,29 +189,38 @@ img {
 
 /* ----- MUSIC PAGE (NO COLUMNS) ----- */
 
- /* Small picture + audio box */
+ /* Center grid container */
+.center-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 180px); /* 2 columns */
+    grid-template-rows: repeat(2, auto);     /* 2 rows */
+    gap: 20px;                               /* space between boxes */
+    justify-content: center;                  /* center horizontally */
+    align-content: center;                    /* center vertically */
+    height: 100vh;                            /* full screen height */
+}
+
+/* Small picture + audio box */
 .center-box {
-    position: absolute;
-    width: 180px;            /* smaller box */
     background-color: plum;
     padding: 8px;
     border-radius: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 6px;                /* small gap between image & audio */
+    gap: 6px;               /* small gap between image & audio */
 }
 
 /* Title */
 .center-box h3 {
     margin: 0;
-    font-size: 13px;         /* smaller font */
+    font-size: 13px;        /* smaller font */
 }
 
 /* Picture smaller */
 .center-box img {
     width: 100%;
-    height: 100px;           /* smaller height */
+    height: 100px;          /* smaller image */
     object-fit: cover;
     border-radius: 8px;
 }
@@ -219,31 +228,6 @@ img {
 /* Audio same width */
 .center-box audio {
     width: 100%;
-}
-
-/* 4 positions around center with gap */
-.center-top-left {
-    top: 35%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-}
-
-.center-top-right {
-    top: 35%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-}
-
-.center-bottom-left {
-    top: 65%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-}
-
-.center-bottom-right {
-    top: 65%;
-    left: 65%;
-    transform: translate(-50%, -50%);
 }
 
 /* ----- CAFE HUNTING PAGE: 4 SLIDESHOW CORNER LAYOUT ----- */
@@ -327,6 +311,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
