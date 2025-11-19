@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dhia's Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>DHIA'S DIARY</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="cafe hunting.html">Cafe Hunting</a>
+        <a href="music.html">Music</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="about me.html">About Me</a>
+        <a href="home.html">Home</a>
+    </div>
+
+    <!-- CAFE HUNTING PAGE: 4 SLIDESHOW GRID -->
+    <div class="cafe-grid">
+
+        <!-- Top Left -->
+        <div>
+            <h3 class="cafe-title">PADDY CAFE AND RESTAURANT</h3>
+            <div class="cafe-slideshow" id="cafe1">
+                <div class="cafe-slide cafe-fade"><img src="PADYO_1.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="PADYO_2.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="PADYO_3.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="PADYO_4.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="PADYO_5.jpg"></div>
+
+                <span class="cafe-prev" onclick="moveCafeSlide(-1,0)">❮</span>
+                <span class="cafe-next" onclick="moveCafeSlide(1,0)">❯</span>
+            </div>
+        </div>
+
+        <!-- Top Right -->
+        <div>
+            <h3 class="cafe title">10 GRAM CAFE</h3>
+            <div class="cafe-slideshow" id="cafe2">
+                <div class="cafe-slide cafe-fade"><img src="10GRAM_1.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="10GRAM_2.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="10GRAM_3.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="10GRAM_4.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="10GRAM_5.jpg"></div>
+
+                <span class="cafe-prev" onclick="moveCafeSlide(-1,1)">❮</span>
+                <span class="cafe-next" onclick="moveCafeSlide(1,1)">❯</span>
+            </div>
+        </div>
+
+        <!-- Bottom Left -->
+        <div>
+            <h3 class="cafe title">LATTE CAFE</h3>
+            <div class="cafe-slideshow" id="cafe3">
+                <div class="cafe-slide cafe-fade"><img src="LATTE_1.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="LATTE_2.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="LATTE_3.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="LATTE_4.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="LATTE_5.jpg"></div>
+
+                <span class="cafe-prev" onclick="moveCafeSlide(-1,2)">❮</span>
+                <span class="cafe-next" onclick="moveCafeSlide(1,2)">❯</span>
+            </div>
+        </div>
+
+        <!-- Bottom Right -->
+        <div>
+            <h3 class="cafe-title">KOPI BUNGA</h3>
+            <div class="cafe-slideshow" id="cafe4">
+                <div class="cafe-slide cafe-fade"><img src="BUNGA_1.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="BUNGA_2.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="BUNGA_3.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="BUNGA_4.jpg"></div>
+                <div class="cafe-slide cafe-fade"><img src="BUNGA_5.jpg"></div>
+
+                <span class="cafe-prev" onclick="moveCafeSlide(-1,3)">❮</span>
+                <span class="cafe-next" onclick="moveCafeSlide(1,3)">❯</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JAVASCRIPT FOR 4 SLIDESHOWS -->
+    <script>
+        let cafeIndex = [1,1,1,1];
+        let cafeId = ["cafe1","cafe2","cafe3","cafe4"];
+
+        function moveCafeSlide(n, no) {
+            showCafeSlides(cafeIndex[no] += n, no);
+        }
+
+        function showCafeSlides(n, no) {
+            let slides = document.querySelectorAll(`#${cafeId[no]} .cafe-slide`);
+            if (n > slides.length) cafeIndex[no] = 1;
+            if (n < 1) cafeIndex[no] = slides.length;
+
+            slides.forEach(slide => slide.style.display = "none");
+            slides[cafeIndex[no] - 1].style.display = "block";
+        }
+
+        // Initialize all 4 slideshows
+        showCafeSlides(1,0);
+        showCafeSlides(1,1);
+        showCafeSlides(1,2);
+        showCafeSlides(1,3);
+    </script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
