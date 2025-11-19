@@ -199,6 +199,13 @@ img {
     border-radius: 10px;      /* optional: rounded corners */
 }
 
+.video-caption {
+    margin-top: 10px;         /* space between video and text */
+    text-align: center;       /* center text */
+    font-size: 16px;          /* adjust as needed */
+    color: #333;              /* optional styling */
+}
+
 /* ----- MUSIC PAGE (NO COLUMNS) ----- */
 
 /* Base box style */
@@ -339,6 +346,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
