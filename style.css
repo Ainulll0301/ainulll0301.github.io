@@ -187,37 +187,61 @@ img {
   color: black;
 }
 
-/* ----- MUSIC PAGE: 4 GRID LAYOUT ----- */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
-  gap: 10px;
-  padding: 20px;
+/* ----- MUSIC PAGE (NO COLUMNS) ----- */
+
+/* Each music item: title → image → audio */
+.music-item {
+    position: absolute;      /* allows corner placement */
+    width: 300px;
+    background-color: plum;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;                /* small gap between title, image, audio */
 }
 
-.grid-item {
-  background-color: plum;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
+/* Title */
+.music-item h2 {
+    margin: 0;
+    font-size: 20px;
 }
 
-.grid-item h2 {
-  margin-bottom: 15px;
+/* Same-size Pictures */
+.music-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.grid-item img {
-  width: 100%;
-  height: 180px;     /* smaller picture */
-  object-fit: cover;
-  margin-bottom: 12px;
-  border-radius: 8px;
+/* Audio player */
+.music-item audio {
+    width: 100%;
+    margin-top: 5px;
 }
 
-/* Audio spacing */
-.grid-item audio {
-  width: 100%;
-  margin-top: 10px;
+/* ---- Positioning for 4 corners ---- */
+.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.bottom-right {
+    bottom: 20px;
+    right: 20px;
 }
 
 /* ----- CAFE HUNTING PAGE: 4 SLIDESHOW CORNER LAYOUT ----- */
@@ -301,6 +325,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
