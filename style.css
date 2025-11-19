@@ -265,6 +265,13 @@ img {
     transform: translate(0, 0);
 }
 
+.audio-caption {
+    margin: 5px 0 0 0;      /* small gap above text */
+    font-size: 14px;         /* adjust size */
+    text-align: center;      /* center below audio */
+    color: #333;             /* optional color */
+}
+
 /* ----- CAFE HUNTING PAGE: 4 SLIDESHOW CORNER LAYOUT ----- */
 .cafe-grid {
   display: grid;
@@ -346,6 +353,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
