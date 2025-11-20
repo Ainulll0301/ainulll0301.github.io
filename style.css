@@ -60,24 +60,34 @@ header {
 /* ---- CENTER ENTIRE SECTION ON SCREEN ---- */
 .center-section {
     display: flex;
-    justify-content: center; /* horizontal center */
-    align-items: center;     /* vertical center */
-    height: 100vh;           /* full screen height */
+    justify-content: center; /* horizontal center of the screen */
+    align-items: center;     /* vertical center of the screen */
+    height: 100vh;           /* full viewport height */
 }
 
 /* ---- IMAGE AND TEXT SIDE BY SIDE ---- */
 .center-flex {
     display: flex;
     gap: 30px;               /* space between image and text */
-    align-items: flex-start; /* align top of image and text */
+    align-items: center;     /* vertical center of text with image */
 }
 
 /* ---- IMAGE SIZE ---- */
 .center-flex img {
-    width: 300px;       /* fixed width */
-    height: 500px;      /* fixed height */
-    border-radius: 10px; /* optional: rounded corners */
-    object-fit: cover;   /* ensures the image fills the box nicely */
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* ---- TEXT BOX ---- */
+.center-container {
+    background-color: white;
+    width: 350px;
+    padding: 25px;
+    text-align: justify;
+    border: 3px solid purple;
+    border-radius: 10px;
 }
 
 /* ----- ABOUT ME SECTION LAYOUT ----- */
@@ -348,6 +358,7 @@ header {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
