@@ -57,6 +57,20 @@ header {
     align-items: flex-start; /* align top of image and text */
 }
 
+/* ---- CENTER ENTIRE SECTION ON SCREEN ---- */
+.center-section {
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+    height: 100vh;           /* make section full viewport height */
+}
+
+.center-flex {
+    display: flex;
+    gap: 30px;               /* space between image and text */
+    align-items: flex-start; /* align top of image and text */
+}
+
 /* ----- ABOUT ME SECTION LAYOUT ----- */
 .about-container {
   display: flex;
@@ -325,6 +339,7 @@ header {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
