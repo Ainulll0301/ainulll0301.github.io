@@ -123,6 +123,39 @@ header {
     }
 }
 
+/* Flex container to put image and text side by side and center them */
+.center-section {
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    align-items: center;      /* center vertically */
+    gap: 30px;                /* space between image and text */
+    margin-top: 30px;
+    flex-wrap: wrap;          /* responsive: stack on small screens */
+}
+
+/* Optional: image styling */
+.center-section img {
+    display: block;
+    border-radius: 10px;
+}
+
+/* Fade-in animation only */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Keep text box width same as before */
+.center-container {
+    width: 350px;
+}
+
 /* ----- ABOUT ME SECTION LAYOUT ----- */
 .about-container {
   display: flex;
@@ -391,6 +424,7 @@ header {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
