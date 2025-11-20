@@ -62,20 +62,22 @@ header {
     display: flex;
     justify-content: center; /* horizontal center */
     align-items: center;     /* vertical center */
-    height: 100vh;           /* make section full viewport height */
+    height: 100vh;           /* full screen height */
 }
 
+/* ---- IMAGE AND TEXT SIDE BY SIDE ---- */
 .center-flex {
     display: flex;
     gap: 30px;               /* space between image and text */
     align-items: flex-start; /* align top of image and text */
 }
 
+/* ---- IMAGE SIZE ---- */
 .center-flex img {
-    height: 500px;        /* set your desired height */
-    width: auto;          /* maintain aspect ratio */
-    border-radius: 10px;  /* optional: rounded corners */
-    object-fit: cover;    /* ensures image covers the height nicely */
+    width: 300px;       /* fixed width */
+    height: 500px;      /* fixed height */
+    border-radius: 10px; /* optional: rounded corners */
+    object-fit: cover;   /* ensures the image fills the box nicely */
 }
 
 /* ----- ABOUT ME SECTION LAYOUT ----- */
@@ -346,6 +348,7 @@ header {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
