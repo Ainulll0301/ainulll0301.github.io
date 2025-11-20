@@ -71,6 +71,13 @@ header {
     align-items: flex-start; /* align top of image and text */
 }
 
+.center-flex img {
+    height: 400px;        /* set your desired height */
+    width: auto;          /* maintain aspect ratio */
+    border-radius: 10px;  /* optional: rounded corners */
+    object-fit: cover;    /* ensures image covers the height nicely */
+}
+
 /* ----- ABOUT ME SECTION LAYOUT ----- */
 .about-container {
   display: flex;
@@ -339,6 +346,7 @@ header {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
