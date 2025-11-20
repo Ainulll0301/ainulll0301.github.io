@@ -43,87 +43,7 @@ header {
     border-radius: 10px;
 }
 
-/* -------------------------------------------------- */
-/*               ANIMATION SECTION                    */
-/* -------------------------------------------------- */
-
-/* Fade-in animation for the title */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.2s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* Slide image from left */
-.slide-left {
-    opacity: 0;
-    transform: translateX(-40px);
-    animation: slideLeft 1s ease-out forwards;
-}
-
-@keyframes slideLeft {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Slide text box from right */
-.slide-right {
-    opacity: 0;
-    transform: translateX(40px);
-    animation: slideRight 1s ease-out forwards;
-}
-
-@keyframes slideRight {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.2s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-/* Center entire section */
-.center-section {
-    text-align: center;
-    margin-top: 30px;
-}
-
-/* Center image */
-.center-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
-
-/* Fade-in animation only (NO movement) */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.5s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
-/* Flex container to put image and text side by side and center them */
+/* ---- CENTER SECTION (IMAGE + TEXT SIDE BY SIDE) ---- */
 .center-section {
     display: flex;
     justify-content: center;  /* center horizontally */
@@ -133,13 +53,15 @@ header {
     flex-wrap: wrap;          /* responsive: stack on small screens */
 }
 
-/* Optional: image styling */
+/* IMAGE STYLING */
 .center-section img {
     display: block;
     border-radius: 10px;
+    width: 300px;
+    height: 300px;
 }
 
-/* Fade-in animation only */
+/* ---- FADE-IN ANIMATION ---- */
 .fade-in {
     opacity: 0;
     animation: fadeIn 1.5s ease-out forwards;
@@ -149,11 +71,6 @@ header {
     to {
         opacity: 1;
     }
-}
-
-/* Keep text box width same as before */
-.center-container {
-    width: 350px;
 }
 
 /* ----- ABOUT ME SECTION LAYOUT ----- */
@@ -424,6 +341,7 @@ header {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
