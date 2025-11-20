@@ -33,7 +33,7 @@ header {
     color: black;
 }
 
-/* ---- TEXT BOX ---- */
+/* ----TEXT-BOX ---- */
 .center-container {
     background-color: white;
     width: 350px;
@@ -41,36 +41,6 @@ header {
     text-align: justify;
     border: 3px solid purple;
     border-radius: 10px;
-}
-
-/* ---- CENTER SECTION (IMAGE + TEXT SIDE BY SIDE) ---- */
-.center-section {
-    display: flex;
-    justify-content: center;  /* center horizontally */
-    align-items: center;      /* center vertically */
-    gap: 30px;                /* space between image and text */
-    margin-top: 30px;
-    flex-wrap: wrap;          /* responsive: stack on small screens */
-}
-
-/* IMAGE STYLING */
-.center-section img {
-    display: block;
-    border-radius: 10px;
-    width: 300px;
-    height: 300px;
-}
-
-/* ---- FADE-IN ANIMATION ---- */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1.5s ease-out forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
 }
 
 /* ----- ABOUT ME SECTION LAYOUT ----- */
@@ -341,6 +311,7 @@ header {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
