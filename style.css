@@ -97,6 +97,31 @@ header {
         opacity: 1;
     }
 }
+/* Center entire section */
+.center-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Center image */
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/* Fade-in animation only (NO movement) */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
 
 /* ----- ABOUT ME SECTION LAYOUT ----- */
 .about-container {
@@ -366,6 +391,7 @@ header {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
